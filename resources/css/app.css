@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btnsetg {
+    @apply mr-4 font-bold text-base  text-center bg-gray-600;
+}
+
+/* 追加箇所 */
+.myclass {
+	@apply bg-teal-700;
+}
+
+.myclassr {
+	@apply bg-red-700;
+}
+
+.myclassc {
+	@apply bg-sky-300;
+}
+
+.myclassv {
+	@apply bg-blue-500;
+}
+
+.myclasso {
+	@apply bg-orange-500;
+}
+
+.myclassg {
+	@apply bg-green-500;
+}
+
+.liked {
+	color: pink;
+  }
