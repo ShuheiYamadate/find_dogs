@@ -57,7 +57,7 @@
                             </a> 
                         </div>
                         <!-- お気に入り -->
-                            @if(session()->has('input'))
+                            {{-- @if(session()->has('input'))
                             <dd class="likePost" data-post-id="{{ $findIdPost['id'] }}">
                             @if(empty($liked))
                                 <p id="likeId{{ $findIdPost['id'] }}">♥</p>
@@ -70,7 +70,7 @@
                             <p>♥</p>
                             </dd>
                             @endif
-                            <button type="submit" name="myLike">お気に入り</button>
+                            <button type="submit" name="myLike">お気に入り</button> --}}
                     </div>
                 </div>
             </div>

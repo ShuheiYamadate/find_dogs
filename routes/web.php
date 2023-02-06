@@ -29,7 +29,7 @@ Route::get('/dashboard', function () {
 
 Route::get('/', [PostController::class, 'post.index'])->name('top')->middleware('guest');
 ;
-Route::get('/', 'PostController@index');
+
 
 require __DIR__.'/auth.php';
 
@@ -43,9 +43,7 @@ require __DIR__.'/auth.php';
     Route::get('post/mypost', [PostController::class, 'mypost'])->name('post.mypost');
     Route::get('post/mycomment', [PostController::class, 'mycomment'])->name('post.mycomment');
     Route::resource('post', PostController::class);
-    Route::post('like', [CommentController::class, 'like'])->name('reviews.like');
 
-    Route::post('/like', 'ReviewController@like')->name('reviews.like');
 
     // お問い合わせ
 
@@ -69,11 +67,6 @@ require __DIR__.'/auth.php';
     // 追加
     Route::patch('roles/{user}/attach', [RoleController::class, 'attach'])->name('role.attach');
     Route::patch('roles/{user}/detach', [RoleController::class, 'detach'])->name('role.detach');
-
-    // お気に入り
-    Route::get('/like',[PostsController::class,'like'])->name('like');
-    Route::post('/like',[PostsController::class,'like'])->name('like');
-
 
    
 
