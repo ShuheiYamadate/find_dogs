@@ -11,6 +11,7 @@ PHP自作
 # 使い方
  
 ゲストユーザ
+
 お問い合わせをすることができます。
 
 一般ユーザ
@@ -34,18 +35,6 @@ MAMP/MySQL/PHP
 テーブル
 
 お使いのphpMyAdminに上のデータベースを作り、入っているDB.sqlをインポートしていただければお使いいただけるようになると思います。
-
-
-# Usage
- 
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
- 
-```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
-```
- 
 
 # 作成者
  
